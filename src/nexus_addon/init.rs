@@ -142,24 +142,6 @@ fn load_addon_textures() -> Result<()> {
     Ok(())
 }
 
-/// Sets up the quick access menu entry
-#[cfg(feature = "nexus")]
-fn setup_quick_access() -> Result<()> {
-    // Note: add_quick_access doesn't return a Result, so we assume success
-    // In a real implementation, we might want to add validation
-    add_quick_access(
-        "BLISH_OVERLAY_LOADER_SHORTCUT",
-        "BLISH_OVERLAY_LOADER_ICON",
-        "BLISH_OVERLAY_LOADER_ICON_HOVER",
-        "BLISH_OVERLAY_LOADER_KEYBIND",
-        "Blish HUD overlay loader",
-    )
-    .revert_on_unload();
-
-    log::info!("Quick access menu setup successfully");
-    Ok(())
-}
-
 /// Sets up the keybind handlers
 #[cfg(feature = "nexus")]
 fn setup_keybinds() -> Result<()> {
