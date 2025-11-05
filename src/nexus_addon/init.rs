@@ -102,9 +102,6 @@ fn initialize_nexus_addon() -> Result<()> {
     // Load textures for the addon
     load_addon_textures()?;
 
-    // Setup quick access menu
-    setup_quick_access()?;
-
     // Setup keybinds
     setup_keybinds()?;
 
