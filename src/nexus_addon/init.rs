@@ -32,7 +32,7 @@ use nexus::{
     keybind::register_keybind_with_string,
     keybind_handler,
     paths::get_addon_dir,
-    quick_access::add_quick_access,
+    //quick_access::add_quick_access,
     texture::{RawTextureReceiveCallback, load_texture_from_memory},
     texture_receive,
 };
